@@ -1,0 +1,29 @@
+{
+	"name": "vanclei/cachephp",
+	"description": "CachePHP is a PHP cache provider which combines mutiple levels of caching",
+	"keywords": ["php", "cache", "memcache", "apc"],
+	"license": "MIT",
+	"version": "1.0.1",	
+	"authors": [
+        {
+            "name": "Vanclei Picolli",
+            "email": "vancleip@gmail.com",
+            "homepage": "https://github.com/vanclei"
+        }
+    ],
+    
+    "require": {
+	   "ext-memcache": "*",
+       "ext-apc": "*",
+       "symfony/yaml": "2.4.*",
+       "phpunit/phpunit": "^4.6",
+       "squizlabs/php_codesniffer": "1.5.*"
+    },
+    
+    
+    "autoload": {
+        "psr-4": {
+            "CachePHP\\": "src/"
+        }
+    }
+}
